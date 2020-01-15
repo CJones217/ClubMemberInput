@@ -11,9 +11,9 @@ public class UserInterface extends JFrame implements ActionListener
     private JPanel panel2 = new JPanel();
     private JPanel loginPanel= new JPanel();
 
-    private JLabel textLabel1 = new JLabel("type in your username:");
+    private JLabel textLabel1 = new JLabel("type in your loyola email:");
     private JTextField textField1= new JTextField(20);
-    private JLabel textLabel2 = new JLabel("type in your password:");
+    private JLabel textLabel2 = new JLabel("type in your first and last name:");
     private JTextField textField2= new JTextField(20);
    // private JLabel textLabel3 = new JLabel("click a button for your gender:");
    // private JLabel textLabel4 = new JLabel("click each button for your height(feet and inches):");
@@ -22,11 +22,11 @@ public class UserInterface extends JFrame implements ActionListener
    // private JLabel textLabel6 = new JLabel("type in your favorite food:");
    // private JTextField textField6= new JTextField(15);
    // private JLabel textLabel7 = new JLabel("click the buttons until it is your birth month day and year         ");
-    private JLabel textLabel8 = new JLabel("type in where you were born:");
-    private JTextField textField8= new JTextField(10);
+    private JLabel textLabel8 = new JLabel("type in your loyola id:");
+    private JTextField textField8= new JTextField(20);
     private JLabel labelSpace = new JLabel("                         ");
     private JLabel loginLabel= new JLabel("welcome!");
-    private JLabel needAcc=new JLabel("need an account?");
+    private JLabel needAcc=new JLabel("all finished?");
 
 //    private JButton buttonLogin = new JButton("login");
     private JButton buttonSignUp = new JButton("click here");
@@ -51,18 +51,17 @@ public class UserInterface extends JFrame implements ActionListener
 
 
     public UserInterface(){
+        frame = new JFrame("FlashApp");
+        try {
+            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         setFrameAndPanel();
         addAllActionListeners();
     }
     public void addAllActionListeners()
     {
-        //buttonm.addActionListener(this);
-        //buttonf.addActionListener(this);
-        //buttonFeet.addActionListener(this);
-        //buttonInch.addActionListener(this);
-        //buttonMonth.addActionListener(this);
-        //buttonDay.addActionListener(this);
-        //buttonYear.addActionListener(this);
         buttonSubmit.addActionListener(this);
         buttonLogout.addActionListener(this);
 //        buttonLogin.addActionListener(this);
@@ -85,10 +84,14 @@ public class UserInterface extends JFrame implements ActionListener
         loginPanel.add(loginLabel);
         loginPanel.add(textLabel1);
         loginPanel.add(textField1);
-        loginPanel.add(labelSpace);
+        //loginPanel.add(labelSpace);
         loginPanel.add(textLabel2);
         loginPanel.add(textField2);
+        //loginPanel.add(labelSpace);
+        loginPanel.add(textLabel8);
+        loginPanel.add(textField8);
 //        loginPanel.add(buttonLogin);
+        loginPanel.add(labelSpace);
         loginPanel.add(needAcc);
         loginPanel.add(buttonSignUp);
         resetFieldsAndButtons();
