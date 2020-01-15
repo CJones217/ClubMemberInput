@@ -100,35 +100,21 @@ public class UserInterface extends JFrame implements ActionListener
         loginPanel.add(buttonSignUp);
         resetFieldsAndButtons();
     }
-    public void setPanel(){
-        frame.getContentPane().add(panel);
-        panel.add(textLabel1);
-        panel.add(textField1);
-        panel.add(textLabel2);
-        panel.add(textField2);
-        //panel.add(textLabel3);
-        //panel.add(buttonm);
-        //panel.add(buttonf);
-        //panel.add(textLabel4);
-        //panel.add(buttonFeet);
-        //panel.add(buttonInch);
-        //panel.add(textLabel5);
-        //panel.add(textField5);
-        //panel.add(textLabel6);
-        //panel.add(textField6);
-        //panel.add(textLabel7);
-        //panel.add(buttonMonth);
-        //panel.add(buttonDay);
-        //panel.add(buttonYear);
-        panel.add(labelSpace);
-        panel.add(textLabel8);
-        panel.add(textField8);
-        panel.add(buttonSubmit);
-
-        frame.repaint();
-        frame.validate();
-        resetFieldsAndButtons();
-    }
+//    public void setPanel(){
+//        frame.getContentPane().add(panel);
+//        panel.add(textLabel1);
+//        panel.add(textField1);
+//        panel.add(textLabel2);
+//        panel.add(textField2);
+//        panel.add(labelSpace);
+//        panel.add(textLabel8);
+//        panel.add(textField8);
+//        panel.add(buttonSubmit);
+//
+//        frame.repaint();
+//        frame.validate();
+//        resetFieldsAndButtons();
+//    }
 
     public void removePanel1()
     {
@@ -213,8 +199,9 @@ public class UserInterface extends JFrame implements ActionListener
 //        }
         else if(event.getSource()==buttonSignUp)
         {
-            removeLoginPanel();
-            setPanel();
+//            removeLoginPanel();
+//            setPanel();
+            pressSubmit();
         }
     }
     public void pressLogin()
@@ -241,13 +228,15 @@ public class UserInterface extends JFrame implements ActionListener
 
         UserDataFile.printUser();
         removePanel1();
-        setFrameAndPanel2();
+        setFrameAndPanel();
     }
 
     public void resetFieldsAndButtons()
     {
         textField1.setText("");
         textField2.setText("");
+        textField3.setText("");
+        textField4.setText("");
         textField8.setText("");
     }
 

@@ -1,0 +1,3 @@
+Email: cjones28@luc.edu name: collin jones ID: 2342434 gradYear: junior Major: computer science
+Email: cjones28@luc.edu name: Collin Jones ID: 2343242 gradYear: sophomore Major: computer science
+Email: davidsta@luc.edu name: david star ID: 696969696969 gradYear: junior Major: STEM
