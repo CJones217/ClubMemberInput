@@ -15,13 +15,10 @@ public class UserInterface extends JFrame implements ActionListener
     private JTextField textField1= new JTextField(20);
     private JLabel textLabel2 = new JLabel("type in your first and last name:");
     private JTextField textField2= new JTextField(20);
-   // private JLabel textLabel3 = new JLabel("click a button for your gender:");
-   // private JLabel textLabel4 = new JLabel("click each button for your height(feet and inches):");
-   // private JLabel textLabel5 = new JLabel("type in your favorite animal:");
-   // private JTextField textField5= new JTextField(15);
-   // private JLabel textLabel6 = new JLabel("type in your favorite food:");
-   // private JTextField textField6= new JTextField(15);
-   // private JLabel textLabel7 = new JLabel("click the buttons until it is your birth month day and year         ");
+    private JLabel textLabel3 = new JLabel("type in your grad year (freshman, sophomore, junior, senior):");
+    private JTextField textField3= new JTextField(20);
+    private JLabel textLabel4 = new JLabel("type in your major:");
+    private JTextField textField4= new JTextField(20);
     private JLabel textLabel8 = new JLabel("type in your loyola id:");
     private JTextField textField8= new JTextField(20);
     private JLabel labelSpace = new JLabel("                         ");
@@ -45,7 +42,9 @@ public class UserInterface extends JFrame implements ActionListener
 
     private String lucEmail="";
     private String name="";
+    private String id="";
     private String gradYear="";
+    private String major="";
     private static dojoUser user1;
 
 
@@ -90,6 +89,11 @@ public class UserInterface extends JFrame implements ActionListener
         //loginPanel.add(labelSpace);
         loginPanel.add(textLabel8);
         loginPanel.add(textField8);
+        loginPanel.add(textLabel3);
+        loginPanel.add(textField3);
+        loginPanel.add(labelSpace);
+        loginPanel.add(textLabel4);
+        loginPanel.add(textField4);
 //        loginPanel.add(buttonLogin);
         loginPanel.add(labelSpace);
         loginPanel.add(needAcc);
@@ -230,8 +234,10 @@ public class UserInterface extends JFrame implements ActionListener
     public void pressSubmit(){
         lucEmail=textField1.getText();
         name=textField2.getText();
-        gradYear=textField8.getText();
-        user1 =new dojoUser(lucEmail,name,gradYear);
+        gradYear=textField3.getText();
+        id=textField8.getText();
+        major=textField4.getText();
+        user1 =new dojoUser(lucEmail,name,id,gradYear,major);
 
         UserDataFile.printUser();
         removePanel1();
