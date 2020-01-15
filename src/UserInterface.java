@@ -11,22 +11,22 @@ public class UserInterface extends JFrame implements ActionListener
     private JPanel panel2 = new JPanel();
     private JPanel loginPanel= new JPanel();
 
-    private JLabel textLabel1 = new JLabel("type in your loyola email:");
+    private JLabel textLabel1 = new JLabel("Type in your loyola email:");
     private JTextField textField1= new JTextField(20);
-    private JLabel textLabel2 = new JLabel("type in your first and last name:");
+    private JLabel textLabel2 = new JLabel("Type in your first and last name:");
     private JTextField textField2= new JTextField(20);
-    private JLabel textLabel3 = new JLabel("type in your grad year (freshman, sophomore, junior, senior):");
+    private JLabel textLabel3 = new JLabel("Type in your graduation year :");
     private JTextField textField3= new JTextField(20);
-    private JLabel textLabel4 = new JLabel("type in your major:");
+    private JLabel textLabel4 = new JLabel("Type in your major:");
     private JTextField textField4= new JTextField(20);
-    private JLabel textLabel8 = new JLabel("type in your loyola id:");
+    private JLabel textLabel8 = new JLabel("Type in your loyola id:");
     private JTextField textField8= new JTextField(20);
     private JLabel labelSpace = new JLabel("                         ");
-    private JLabel loginLabel= new JLabel("welcome!");
-    private JLabel needAcc=new JLabel("all finished?");
+    private JLabel loginLabel= new JLabel("Welcome!");
+    private JLabel needAcc=new JLabel("All finished?");
 
 //    private JButton buttonLogin = new JButton("login");
-    private JButton buttonSignUp = new JButton("click here");
+    private JButton buttonSignUp = new JButton("Click here");
 
   //  private JButton buttonm = new JButton("M");
   //  private JButton buttonf = new JButton("F");
@@ -50,7 +50,7 @@ public class UserInterface extends JFrame implements ActionListener
 
 
     public UserInterface(){
-        frame = new JFrame("FlashApp");
+        frame = new JFrame("LUC NO Registration");
         try {
             UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
         } catch (Exception e) {
