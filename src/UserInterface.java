@@ -25,16 +25,7 @@ public class UserInterface extends JFrame implements ActionListener
     private JLabel loginLabel= new JLabel("Welcome!");
     private JLabel needAcc=new JLabel("All finished?");
 
-//    private JButton buttonLogin = new JButton("login");
     private JButton buttonSignUp = new JButton("Click here");
-
-  //  private JButton buttonm = new JButton("M");
-  //  private JButton buttonf = new JButton("F");
-  //  private JButton buttonFeet = new JButton("0");
-  //  private JButton buttonInch = new JButton("0");
-  //  private JButton buttonMonth = new JButton("1");
-  //  private JButton buttonDay = new JButton("1");
-  //  private JButton buttonYear = new JButton("1980");
     private JButton buttonSubmit= new JButton("submit");
 
     private JLabel panel2HelloLabel = new JLabel();
@@ -63,7 +54,6 @@ public class UserInterface extends JFrame implements ActionListener
     {
         buttonSubmit.addActionListener(this);
         buttonLogout.addActionListener(this);
-//        buttonLogin.addActionListener(this);
         buttonSignUp.addActionListener(this);
     }
 
@@ -83,10 +73,8 @@ public class UserInterface extends JFrame implements ActionListener
         loginPanel.add(loginLabel);
         loginPanel.add(textLabel1);
         loginPanel.add(textField1);
-        //loginPanel.add(labelSpace);
         loginPanel.add(textLabel2);
         loginPanel.add(textField2);
-        //loginPanel.add(labelSpace);
         loginPanel.add(textLabel8);
         loginPanel.add(textField8);
         loginPanel.add(textLabel3);
@@ -94,27 +82,11 @@ public class UserInterface extends JFrame implements ActionListener
         loginPanel.add(labelSpace);
         loginPanel.add(textLabel4);
         loginPanel.add(textField4);
-//        loginPanel.add(buttonLogin);
         loginPanel.add(labelSpace);
         loginPanel.add(needAcc);
         loginPanel.add(buttonSignUp);
         resetFieldsAndButtons();
     }
-//    public void setPanel(){
-//        frame.getContentPane().add(panel);
-//        panel.add(textLabel1);
-//        panel.add(textField1);
-//        panel.add(textLabel2);
-//        panel.add(textField2);
-//        panel.add(labelSpace);
-//        panel.add(textLabel8);
-//        panel.add(textField8);
-//        panel.add(buttonSubmit);
-//
-//        frame.repaint();
-//        frame.validate();
-//        resetFieldsAndButtons();
-//    }
 
     public void removePanel1()
     {
@@ -149,39 +121,7 @@ public class UserInterface extends JFrame implements ActionListener
 
     public void actionPerformed(ActionEvent event)
     {
-//        if(event.getSource()==buttonm)
-//        {
-//            buttonm.setText("V");
-//            buttonf.setText("F");
-//            tempGender='m';
-//
-//        }
-//        else if(event.getSource()==buttonf)
-//        {
-//            buttonm.setText("M");
-//            buttonf.setText("V");
-//            tempGender='f';
-//        }
-//        else if(event.getSource()==buttonFeet)
-//        {
-//            settingFeet();
-//        }
-//        else if(event.getSource()==buttonInch)
-//        {
-//            settingInch();
-//        }
-//        else if(event.getSource()==buttonMonth)
-//        {
-//            settingMonth();
-//        }
-//        else if(event.getSource()==buttonDay)
-//        {
-//            settingDay();
-//        }
-//        else if(event.getSource()==buttonYear)
-//        {
-//            settingYear();
-//        }
+
          if(event.getSource()==buttonSubmit)
         {
             pressSubmit();
@@ -193,14 +133,9 @@ public class UserInterface extends JFrame implements ActionListener
             frame.repaint();
             frame.validate();
         }
-//        else if(event.getSource()==buttonLogin)
-//        {
-//            pressLogin();
-//        }
+
         else if(event.getSource()==buttonSignUp)
         {
-//            removeLoginPanel();
-//            setPanel();
             pressSubmit();
         }
     }
