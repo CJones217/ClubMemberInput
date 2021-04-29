@@ -1,3 +1,4 @@
+package ClubMemberInput;
 public class dojoUser
 {
     private String lucEmail="";
