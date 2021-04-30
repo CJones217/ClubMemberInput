@@ -4,8 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
-public class UserInterface extends JFrame implements ActionListener
-{
+public class UserInterface extends JFrame implements ActionListener {
 
     private JFrame frame = new JFrame();
     private JPanel panel = new JPanel();
@@ -41,7 +40,7 @@ public class UserInterface extends JFrame implements ActionListener
 
 
 
-    public UserInterface(){
+    public UserInterface() {
         frame = new JFrame("LUC NO Registration");
         try {
             UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
@@ -51,16 +50,15 @@ public class UserInterface extends JFrame implements ActionListener
         setFrameAndPanel();
         addAllActionListeners();
     }
-    public void addAllActionListeners()
-    {
+
+    public void addAllActionListeners() {
         buttonSubmit.addActionListener(this);
         buttonLogout.addActionListener(this);
         buttonSignUp.addActionListener(this);
     }
 
 
-    public void setFrameAndPanel()
-    {
+    public void setFrameAndPanel() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500); // 390,400
         frame.setVisible(true);
@@ -68,8 +66,8 @@ public class UserInterface extends JFrame implements ActionListener
         frame.setResizable(false);
         loginPanel();
     }
-    public void loginPanel()
-    {
+
+    public void loginPanel() {
         frame.getContentPane().add(loginPanel);
         loginPanel.add(loginLabel);
         loginPanel.add(textLabel1);
@@ -89,28 +87,25 @@ public class UserInterface extends JFrame implements ActionListener
         resetFieldsAndButtons();
     }
 
-    public void removePanel1()
-    {
+    public void removePanel1() {
         frame.getContentPane().remove(panel);
         frame.repaint();
         frame.validate();
     }
 
-    public void removePanel2()
-    {
+    public void removePanel2() {
         frame.getContentPane().remove(panel2);
         frame.repaint();
         frame.validate();
     }
-    public void removeLoginPanel()
-    {
+
+    public void removeLoginPanel() {
         frame.getContentPane().remove(loginPanel);
         frame.repaint();
         frame.validate();
     }
 
-    public void setFrameAndPanel2()
-    {
+    public void setFrameAndPanel2() {
         panel2HelloLabel.setText("Hello "+textField1.getText());
         panel2.add(panel2HelloLabel);
         panel2.add(buttonLogout);
@@ -120,41 +115,33 @@ public class UserInterface extends JFrame implements ActionListener
     }
 
 
-    public void actionPerformed(ActionEvent event)
-    {
+    public void actionPerformed(ActionEvent event) {
 
-         if(event.getSource()==buttonSubmit)
-        {
+         if(event.getSource()==buttonSubmit) {
             pressSubmit();
         }
-        else if(event.getSource()==buttonLogout)
-        {
+        else if(event.getSource()==buttonLogout) {
             removePanel2();
             loginPanel();
             frame.repaint();
             frame.validate();
         }
-
-        else if(event.getSource()==buttonSignUp)
-        {
+        else if(event.getSource()==buttonSignUp) {
             pressSubmit();
         }
     }
-    public void pressLogin()
-    {
-        if(UserDataFile.isAnAccount(textField1.getText(),textField2.getText())==true)
-        {
+
+    public void pressLogin() {
+        if(UserDataFile.isAnAccount(textField1.getText(),textField2.getText())==true) {
             removeLoginPanel();
             setFrameAndPanel2();
-        }
-        else
-        {
+        } else {
             loginLabel.setText("error finding user");
         }
 
     }
 
-    public void pressSubmit(){
+    public void pressSubmit() {
         lucEmail=textField1.getText();
         name=textField2.getText();
         gradYear=textField3.getText();
@@ -167,8 +154,7 @@ public class UserInterface extends JFrame implements ActionListener
         setFrameAndPanel();
     }
 
-    public void resetFieldsAndButtons()
-    {
+    public void resetFieldsAndButtons() {
         textField1.setText("");
         textField2.setText("");
         textField3.setText("");
@@ -176,8 +162,7 @@ public class UserInterface extends JFrame implements ActionListener
         textField8.setText("");
     }
 
-    public static dojoUser returnUser()
-    {
+    public static dojoUser returnUser() {
         return user1;
     }
 

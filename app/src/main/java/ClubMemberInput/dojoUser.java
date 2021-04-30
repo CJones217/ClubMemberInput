@@ -1,6 +1,5 @@
 package ClubMemberInput;
-public class dojoUser
-{
+public class dojoUser {
     private String lucEmail="";
     private String name="";
     private String id="";
@@ -8,16 +7,15 @@ public class dojoUser
     private String major="";
 
 
-    public dojoUser()
-    {
+    public dojoUser() {
         lucEmail="defaultUser";
         name="password";
         id = "000000000";
         gradYear="earth";
         major="stemLOL";
     }
-    public dojoUser(String inName, String inPassword)
-    {
+
+    public dojoUser(String inName, String inPassword) {
         lucEmail=inName;
         name=inPassword;
         id = "000000000";
@@ -25,31 +23,37 @@ public class dojoUser
         gradYear="freshie";
         major="stemLOL";
     }
-    public dojoUser(String inName, String inPassword,String loyolaId, String bLoc, String maj)
-    {
+
+    public dojoUser(String inName, String inPassword,String loyolaId, String bLoc, String maj) {
         lucEmail=inName;
         name=inPassword;
         id=loyolaId;
         gradYear=bLoc;
         major=maj;
     }
+
     //get methods for all info
-    public String getLucEmail()
-    {
+    public String getLucEmail() {
         return lucEmail;
     }
-    public String getName()
-    {
+
+    public String getName() {
         return name;
     }
-    public String getId() {return id;}
-    public String getGradYear()
-    {
+
+    public String getId() {
+        return id;
+    }
+
+    public String getGradYear() {
         return gradYear;
     }
-    public String getMajor(){return major;}
-    public String toString()
-    {
+
+    public String getMajor() {
+        return major;
+    }
+
+    public String toString() {
         return "Email: "+lucEmail+" name: "+name+" ID: " +id+ " gradYear: "+gradYear+" Major: "+major;
     }
 
