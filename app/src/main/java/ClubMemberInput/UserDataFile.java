@@ -47,21 +47,29 @@ public class UserDataFile {
             System.exit(0);
         }
         while(tempScanner.hasNextLine()) {
-            if(s.equals(tempScanner.findInLine(s))&&s2.equals(tempScanner.findInLine(s2))) {
-                taco= true;
-            } else {
-                taco=false;
-            }
-
+            
+            taco = compareStringsInFile(s,s2);
             tempScanner.nextLine();
 
-
-            if(taco==true) {
-                break;
+            if(taco == true) {
+                return taco;
             }
         }
         return taco;
 
     }
+
+    private static boolean compareStringsInFile(String s, String s2) {
+
+        if(s.equals(tempScanner.findInLine(s))&&s2.equals(tempScanner.findInLine(s2))) {
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
+    
 
 }
