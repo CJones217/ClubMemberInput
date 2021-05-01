@@ -29,7 +29,7 @@ public class UserDataFileTest {
         // TODO
         s1 = "gradletest@test.com";
         s2 = "collin";
-        assertFalse(sut.isAnAccount(s1, s2));
+        assertTrue(sut.isAnAccount(s1, s2));
     }
 
     @Test
@@ -37,6 +37,6 @@ public class UserDataFileTest {
         // TODO
         s1 = "java@java.com";
         s2 = "not an account";
-        assertTrue(sut.isAnAccount(s1, s2));
+        assertFalse(sut.isAnAccount(s1, s2));
     }
 }
