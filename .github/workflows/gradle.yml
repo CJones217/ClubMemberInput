@@ -25,3 +25,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Submit coverage report
+      run: bash <(curl -s https://codecov.io/bash)
