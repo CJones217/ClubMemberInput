@@ -7,7 +7,7 @@
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/CJones217/ClubMemberInput?logo=GitHub)
 - Complexity
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CJones217/ClubMemberInput?logo=GitHub)
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/CJones217/ClubMemberInput)
+[![CodeFactor](https://www.codefactor.io/repository/github/cjones217/clubmemberinput/badge)](https://www.codefactor.io/repository/github/cjones217/clubmemberinput)
 
 modified dojoclub to use at club sign ups.
 User can put in their info and it will be added to a textfile for further processing.
