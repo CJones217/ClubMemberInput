@@ -2,6 +2,7 @@
 
 - In-process  
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/CJones217/ClubMemberInput/Java%20CI%20with%20Gradle?logo=GitHub)
+![Codecov](https://img.shields.io/codecov/c/gh/CJones217/ClubMemberInput?logo=CodeCov)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/CJones217/ClubMemberInput)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/CJones217/ClubMemberInput?logo=GitHub)
 - Complexity
