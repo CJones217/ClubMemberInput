@@ -8,6 +8,8 @@
 - Complexity
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CJones217/ClubMemberInput?logo=GitHub)
 [![CodeFactor](https://www.codefactor.io/repository/github/cjones217/clubmemberinput/badge)](https://www.codefactor.io/repository/github/cjones217/clubmemberinput)
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/CJones217/ClubMemberInput?logo=Code%20Climate)
+![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/CJones217/ClubMemberInput?logo=Code%20Climate)
 
 modified dojoclub to use at club sign ups.
 User can put in their info and it will be added to a textfile for further processing.
