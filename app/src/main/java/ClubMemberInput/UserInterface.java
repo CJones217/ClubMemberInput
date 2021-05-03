@@ -57,10 +57,10 @@ public class UserInterface extends JFrame implements ActionListener {
     private void setFrameAndPanel() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500); // 390,400
-        frame.setVisible(true);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         loginPanel();
+        frame.setVisible(true);
     }
 
     private void loginPanel() {

@@ -6,3 +6,4 @@ Email: test3 name: test3 ID: test3 gradYear: test3 Major: test3
 Email: test4 name: test4 ID: test4 gradYear: test4 Major: test4
 Email: test5 name: test5 ID: test5 gradYear: test5 Major: test5
 Email: privatte name: private ID: private gradYear: private Major: private
+Email: linux name: linux ID: linux gradYear: linux Major: linux
