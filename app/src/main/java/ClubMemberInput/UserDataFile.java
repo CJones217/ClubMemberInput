@@ -14,7 +14,8 @@ public class UserDataFile {
     private static boolean isClosed = false;
     private static boolean taco =false;
 
-    public UserDataFile() { // TODO take in filename so you can use a testfile when testing
+    // TODO take in filename so you can use a testfile when testing
+    public UserDataFile() { 
         openFileStream();
     }
 
