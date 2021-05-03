@@ -30,7 +30,8 @@ public class dojoUserTest {
     public void tearDown() {
         user = null;
         assertNull(user);
-        s1 = null; s2 = null;
+        s1 = null; 
+        s2 = null;
     }
 
     @Test
