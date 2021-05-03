@@ -21,7 +21,8 @@ public class UserDataFileTest {
     public void tearDown() {
         sut = null;
         assertNull(sut);
-        s1 = null; s2 = null;
+        s1 = null; 
+        s2 = null;
     }
 
     @Test
